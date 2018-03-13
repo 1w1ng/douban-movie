@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="referrer" content="never">
+  <link rel="stylesheet" href="douban.css">
+  <link rel="stylesheet" href="//at.alicdn.com/t/font_442088_dit14a824sw9izfr.css">
+  <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+  <title>移动端豆瓣电影排行</title>
+</head>
+
+<body>
+<main id="content">
+  <section class="rank">
+    <div id="top250">
+<!--<div class="item clearfix">
+    <a href="#">
+      <div class="cover">
+        <img src="https://img3.doubanio.com/view/movie_poster_cover/ipst/public/p1910813120.webp" alt="">
+      </div>
+      <div class="detail">
+        <h2>霸王别姬</h2>
+        <div class="extra"><span class="score">9.0分</span> / 1000人评价</div>
+        <div class="extra">1993 / 剧情、爱情</div>
+        <div class="extra">导演: 陈凯歌</div>
+        <div class="extra">主演: 张国荣、张丰毅、巩俐</div>
+      </div>
+    </a>
+  </div> -->        
+    </div>
+  <div class="loading">
+    <span class="iconfont icon-loading"></span>
+  </div>
+</section>
+
+<section class="us-rank"></section>
+<section class="search-page">
+  <div class="search clearfix">
+    <button class="search-btn">搜索</button>
+    <input type="search" class="search-box" placeholder="搜索电影、电视剧、综艺、影人">
+  </div>
+  <div class="us-ct"></div>
+  <div class="loading">
+    <i class="icon-font icon-loading"></i>
+  </div>
+</section>
+</main>
+<footer id="tabs">
+<div class="tab active"><span class="iconfont icon-top"></span><span>Top250</span></div>
+<div><span class="iconfont icon-us"></span><span>海外排行</span></div>
+<div><span class="iconfont icon-search"></span><span>搜索</span></div>
+</footer>
+<script src="douban.js"></script>
+</body>
+</html>

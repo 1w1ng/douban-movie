@@ -1,0 +1,125 @@
+/* css reset */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+a {
+	text-decoration: none;
+	color: #333;
+	display: block;
+}
+html,body {
+	background: #fff;
+	font-size:12px;
+	line-height: 1.2;
+	height: 100%;
+}
+.clearfix::after{
+	content:'';
+	display: block;
+	clear: both;
+}
+
+/* common css */
+section{
+	padding:0px 10px 10px 10px;
+	position: relative;
+	height: calc(100% - 50px);
+	overflow: scroll;
+	-webkit-overflow-scrolling: touch;
+}
+main>section {
+	position: absolute;
+	width:100%;
+	display: none;
+}
+main>section:first-child {
+	display: block;
+}
+
+.item {
+	padding: 10px 0;
+	border-bottom: 1px solid #ccc;
+}
+.item>a {
+	display: block;
+	display: flex;
+}
+.item .cover,
+.item .cover img {
+	width: 70px;
+}
+.item .detail {
+	flex: 1;
+	padding-left: 10px;
+}
+.item .detail h2 {
+	font-size: 16px;
+}
+.item .detail .extra {
+	color: #999;
+	margin-top: 4px;
+}
+.item .detail .score {
+	color: #ff5722;
+}
+
+/* 加载状态 */
+.loading {
+	padding: 5px;
+	text-align: center;
+	display: none;
+}
+.loading .iconfont {
+	display: inline-block;
+	animation: 1s rotate linear infinite;
+}
+@keyframes rotate {
+	0% { transform: rotate(0deg); }
+	100%{ transform: rotate(360deg); }
+}
+
+/* 底栏选项 */
+#tabs {
+	padding: 5px;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	border-top: 1px solid #ccc;
+	display: flex;
+	justify-content: space-around;
+	text-align: center;
+}
+
+#tabs .active {
+	color:#ff5722;
+}
+#tabs span {
+	display:block;
+}
+
+/* 搜索框 */
+.search-page{
+	padding:10px;
+}
+.search{
+	border-bottom:1px solid rgb(190,190,190);
+	padding-bottom: 10px;
+}
+.search-box{
+	outline: none;
+	border: none;
+	padding:5px;
+	background: rgba(219, 218, 218, 0.933);
+  width: calc(100% - 60px);
+}
+.search .search-btn {
+  float:right;
+  color: #fff;
+  background: #ff662b;
+  padding:5px 10px;
+  border:none;
+  border-radius: 2px;
+  cursor:pointer;
+}
