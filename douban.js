@@ -4,19 +4,19 @@ isToEnd: function ($viewport, $content) {
 },
 createNode: function (movie) {
   var template = `<div class="item">
-<a href="#">
-<div class="cover">
-<img src="" alt="">
-</div>
-<div class="detail">
-<h2></h2>
-<div class="extra"><span class="score"></span>分 / <span class="collect"></span>收藏</div>
-<div class="extra"><span class="year"></span> / <span class="type"></span></div>
-<div class="extra">导演: <span class="director"></span></div>
-<div class="extra">主演: <span class="actor"></span></div>
-</div>
-</a>
-</div>`
+    <a href="#">
+    <div class="cover">
+    <img src="" alt="">
+    </div>
+    <div class="detail">
+    <h2></h2>
+    <div class="extra"><span class="score"></span>分 / <span class="collect"></span>收藏</div>
+    <div class="extra"><span class="year"></span> / <span class="type"></span></div>
+    <div class="extra">导演: <span class="director"></span></div>
+    <div class="extra">主演: <span class="actor"></span></div>
+    </div>
+    </a>
+    </div>`
   var $node = $(template)
   $node.find('a').attr('href', movie.alt)
   $node.find('.cover img')
@@ -74,6 +74,7 @@ getData: function (callback) {
   _this.$container.find('.loading').show()
   $.ajax({
     url: 'https://api.douban.com/v2/movie/top250',
+    type: 'GET',
     data: {
       start: _this.index || 0
     },
@@ -116,6 +117,7 @@ getData: function (callback) {
   _this.$container.find('.loading').show()
   $.ajax({
     url: 'https://api.douban.com/v2/movie/us_box',
+    type: 'GET',
     dataType: 'jsonp'
   }).done(function (ret) {
     callback && callback(ret)
@@ -155,6 +157,7 @@ getData: function (keyword, callback) {
   _this.$container.find('.loading').show()
   $.ajax({
     url: 'https://api.douban.com/v2/movie/search',
+    type: 'GET',
     data: {
       q: keyword
     },
