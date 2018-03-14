@@ -18,15 +18,17 @@ body{
 }
 
 /* common css */
-#top250{
+main>section{
   height:calc(100% - 45px);
   padding:10px;
   background-color:#fff;
   overflow:scroll;
   -webkit-overflow-scrolling: touch; /*ios 上增加弹性*/
+}
+main>section{
   display:none;
 }
-section:first-child{
+main section:first-child{
   display:block;
 }
 

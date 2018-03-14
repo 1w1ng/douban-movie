@@ -103,7 +103,7 @@ render: function (data) {
 }
 var UsBoxPage = {
 init: function () {
-  this.$container = $('#weekly')
+  this.$container = $('#us-rank')
   this.$content = this.$container.find('.container')
   this.start()
 },
