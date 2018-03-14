@@ -10,7 +10,7 @@ createNode: function (movie) {
     </div>
     <div class="detail">
     <h2></h2>
-    <div class="extra"><span class="score"></span>分 / <span class="collect"></span>收藏</div>
+    <div class="extra"><span class="score"></span>分 / <span class="collect"></span>人评价</div>
     <div class="extra"><span class="year"></span> / <span class="type"></span></div>
     <div class="extra">导演: <span class="director"></span></div>
     <div class="extra">主演: <span class="actor"></span></div>
