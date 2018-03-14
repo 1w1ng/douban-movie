@@ -43,6 +43,7 @@ createNode: function (movie) {
   return $node
 }
 }
+
 var Top250Page = {
 init: function () {
   this.$container = $('#top250')
@@ -73,7 +74,7 @@ getData: function (callback) {
   _this.isLoading = true
   _this.$container.find('.loading').show()
   $.ajax({
-    url: 'https://api.douban.com/v2/movie/top250',
+    url: 'http://api.douban.com/v2/movie/top250',
     type: 'GET',
     data: {
       start: _this.index || 0
@@ -102,7 +103,7 @@ render: function (data) {
 }
 var UsBoxPage = {
 init: function () {
-  this.$container = $('#beimei')
+  this.$container = $('#weekly')
   this.$content = this.$container.find('.container')
   this.start()
 },
@@ -116,7 +117,7 @@ getData: function (callback) {
   var _this = this
   _this.$container.find('.loading').show()
   $.ajax({
-    url: 'https://api.douban.com/v2/movie/us_box',
+    url: 'http://api.douban.com/v2/movie/us_box',
     type: 'GET',
     dataType: 'jsonp'
   }).done(function (ret) {
@@ -156,7 +157,7 @@ getData: function (keyword, callback) {
   var _this = this
   _this.$container.find('.loading').show()
   $.ajax({
-    url: 'https://api.douban.com/v2/movie/search',
+    url: 'http://api.douban.com/v2/movie/search',
     type: 'GET',
     data: {
       q: keyword
