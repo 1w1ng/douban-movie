@@ -1,36 +1,36 @@
 /* css reset */
 *{
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
 }
 a{
-  text-decoration: none;
-  color: #333;
+  text-decoration:none;
+  color:#333;
 }
 html,body,main{
-  height: 100%;
-  position: relative;
+  height:100%;
+  position:relative;
 }
 body{
-  font-size: 12px;
-  line-height: 1.2;
+  font-size:12px;
+  line-height:1.2;
 }
 
 /* common css */
-main>section {
-  height: calc(100% - 45px);
-  padding: 10px;
-  background: #fff;
-  overflow: scroll;
+#top250{
+  height:calc(100% - 45px);
+  padding:10px;
+  background-color:#fff;
+  overflow:scroll;
   -webkit-overflow-scrolling: touch; /*ios 上增加弹性*/
+  display:none;
 }
-main>section{
-  display: none;
+section:first-child{
+  display:block;
 }
-main section:first-child{
-  display: block;
-}
+
+/* 内容样式 */
 .item {
   border-bottom: 1px solid #ccc;
   padding-bottom: 10px;
@@ -60,68 +60,70 @@ main section:first-child{
 }
 
 /* 加载状态 */
-.loading {
-  text-align: center;
-  padding-top: 10px;
-  display: none;
+.loading{
+  text-align:center;
+  padding-top:10px;
+  display:none;
 }
-
 @keyframes rotate {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg);  }
-}
-
-/* 搜索框 */
-#search {
-  height: calc(100% - 45px);
-}
-section .search-area{
-  color: #333;
-  padding-bottom: 10px;
-  border-bottom: 1px solid #ccc;
-  position: relative;
-}
-section .search-area input {
-  width: calc(100% - 50px);
-  padding: 8px;
-  background-color: #eee;
-  border: none;
-  border-radius: 2px;
-  box-shadow: none;
-  outline: none;
-}
-section .search-area .button{
-  position: absolute;
-  right: 0;
-  padding: 8px 10px;
-  background: #FF5722;
-  color: #fff;
-  border-radius: 2px;
-  cursor: pointer;
 }
 .loading .iconfont{
   display: inline-block;
   animation: 1s rotate linear infinite;
 }
-footer {
-  position: absolute;
-  bottom: 0;
-  height: 45px;
-  width: 100%;
-  border-top: 1px solid #ccc;
-  background-color: #fff;
-  display: flex;
+
+/* 搜索框 */
+#search{
+  height:calc(100% - 45px);
 }
-footer>div {
-  flex: 1;
-  font-size: 12px;
-  text-align: center;
-  color: #666;
-  padding-top: 6px;
+section .search-area{
+  color:#333;
+  padding-top:10px;
+  padding-bottom:10px;
+  border-bottom:1px solid #ccc;
+  position:relative;
+}
+section .search-area input{
+  width:calc(100% - 50px);
+  padding:9px;
+  background-color:#eee;
+  border:none;
+  border-radius:3px;
+  box-shadow:none;
+  outline:none;
+}
+section .search-area .button{
+  position:absolute;
+  right:0;
+  padding:10px;
+  background:#949ca3;
+  color:#fff;
+  border-radius:3px;
+  cursor:pointer;
+}
+
+/* 底栏 */
+footer{
+  position:absolute;
+  bottom:0;
+  height:45px;
+  width:100%;
+  border-top:1px solid #ccc;
+  background-color:#f0f3f5;
+  display:flex;
+}
+footer>div{
+  flex:1;
+  font-size:12px;
+  text-align:center;
+  color:#666;
+  padding-top:6px;
 }
 footer .active{
-  color: #FF5722;
+  color:#ff5722;
 }
 footer>div>span{
-  display: block;
-} 
+  display:block;
+}

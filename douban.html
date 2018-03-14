@@ -3,74 +3,78 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="referrer" content="no-referrer">
   <link rel="icon" href="douban.ico" type="image/x-icon">
-  <link rel="stylesheet" href="//at.alicdn.com/t/font_442088_dit14a824sw9izfr.css">
+  <link rel="stylesheet" href="//at.alicdn.com/t/font_442088_d3k4vsg09mcgnwmi.css">
   <link rel="stylesheet" href="douban.css">
-  <title>豆瓣电影排行</title>
+  <title>豆瓣Top250</title>
 </head>
 
 <body>
-<main>
-  <section id="top250">
-    <div class="container">
-      <!--<div class="item">
+  <main>
+    <!-- Top250 -->
+    <section id="top250">
+      <div class="container">
+        <!-- <div class="item">
           <a href="#">
-          <div class="cover">
-          <img src="http://img7.doubanio.com/view/movie_poster_cover/spst/public/p513344864.png" alt="">
-          </div>
-          <div class="detail">
-          <h2>霸王别姬</h2>
-          <div class="extra"><span class="score">9.3分</span> / 1000人评价</div>
-          <div class="extra">1993 / 剧情、爱情</div>
-          <div class="extra">导演: 陈凯歌</div>
-          <div class="extra">主演: 张国荣、张丰毅、巩俐</div>
-          </div>
+            <div class="cover">
+              <img src="http://img7.doubanio.com/view/movie_poster_cover/spst/public/p513344864.png" alt="">
+            </div>
+            <div class="detail">
+              <h2>霸王别姬</h2>
+              <div class="extra"><span class="score">9.3分</span> / 1000人评价</div>
+              <div class="extra">1993 / 剧情、爱情</div>
+              <div class="extra">导演: 陈凯歌</div>
+              <div class="extra">主演: 张国荣、张丰毅、巩俐</div>
+            </div>
           </a>
-          </div> -->
-    </div>
-    <div class="loading">
-      <span class="iconfont icon-loading"></span>
-    </div>
-  </section>
+        </div> -->
+      </div>
+      <div class="loading">
+        <span class="iconfont icon-loading"></span>
+      </div>
+    </section>
 
-  <section id="beimei">
-    <div class="container"></div>
-    <div class="loading">
-      <span class="iconfont icon-loading"></span>
-    </div>
-  </section>
-  <section id="search">
-    <div class="search-area">
-      <input type="search" placeholder="搜索电影、电视剧、综艺、影人">
-      <span class="button"> 搜索</span>
-    </div>
-    <div class="search-result"></div>
-    <div class="loading">
-      <span class="iconfont icon-loading"></span>
-    </div>
-  </section>
-</main>
-<footer>
-  <div class="active">
-    <span class="iconfont icon-top"></span>
-    <span>Top250</span>
-  </div>
-  <div>
-    <span class="iconfont icon-us"></span>
-    <span>海外排行</span>
-  </div>
-  <div>
-    <span class="iconfont icon-search"></span>
-    <span>搜索</span>
-  </div>
-</footer>
+    <!-- 口碑榜 -->
+    <section id="weekly">
+      <div class="container"></div>
+      <div class="loading">
+        <span class="iconfont icon-loading"></span>
+      </div>
+    </section>
 
-<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
-<script src="douban.js"></script>
+    <!-- 搜索栏 -->
+    <section id="search">
+      <div class="search-area">
+        <input type="search" placeholder="搜索电影、电视剧、综艺、影人">
+        <span class="button"> 搜索</span>
+      </div>
+      <div class="search-result"></div>
+      <div class="loading">
+        <span class="iconfont icon-loading"></span>
+      </div>
+    </section>
+  </main>
 
+  <footer>
+    <div class="active">
+      <span class="iconfont icon-top"></span>
+      <span>Top250</span>
+    </div>
+    <div>
+      <span class="iconfont icon-weekly"></span>
+      <span>口碑榜</span>
+    </div>
+    <div>
+      <span class="iconfont icon-search"></span>
+      <span>电影搜索</span>
+    </div>
+  </footer>
+
+  <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+  <script src="douban.js"></script>
 </body>
 
 </html>
