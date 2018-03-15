@@ -1,9 +1,11 @@
 # 移动端豆瓣电影
 
 
-http://p5m8oofg5.bkt.clouddn.com/top250.png
+![扫一扫二维码](http://p5m8oofg5.bkt.clouddn.com/top250.png)
 
 请使用手机扫一扫 或者电脑开启device mode浏览
+
+---------------------------------------
 
 - 使用豆瓣电影api和jQuery制作的移动端电影排行榜。
 - 使用ajax向豆瓣api发送请求。
