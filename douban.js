@@ -3,6 +3,7 @@ isToEnd: function ($viewport, $content) {
   return $viewport.height() + $viewport.scrollTop() + 10 > $content.height()
 },
 createNode: function (movie) {
+  //创建节点
   var template = `<div class="item">
     <a href="#">
     <div class="cover">
@@ -49,8 +50,8 @@ init: function () {
   this.$container = $('#top250')
   this.$content = this.$container.find('.container')
   this.index = 0
-  this.isFinish = false
-  this.isLoading = false
+  this.isFinish = false  //是否完成
+  this.isLoading = false //是否正在加载
   this.bind()
   this.start()
 },
@@ -74,9 +75,9 @@ getData: function (callback) {
   _this.isLoading = true
   _this.$container.find('.loading').show()
   $.ajax({
-    url: 'https://api.douban.com/v2/movie/top250',
+    url: 'https://api.douban.com/v2/movie/top250', //跨域
     type: 'GET',
-    data: {
+    data: {    //数据参数
       start: _this.index || 0
     },
     dataType: 'jsonp'
